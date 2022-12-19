@@ -1,0 +1,247 @@
+ .footer {
+     background-color: var(--second-bacground-color);
+     padding-top: 60px;
+     padding-bottom: 60px;
+ }
+
+ .footer-link {
+     display: inline-block;
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.19;
+     color: var(--accent-color);
+     margin-bottom: 20px;
+ }
+
+ .footer.link a {
+     color: var(--accent-color);
+
+ }
+
+ .footer-logo-link {
+     color: var(--fon-color-white);
+ }
+
+ .footer-list {
+     display: inline-block;
+     margin: 0px auto;
+ }
+
+ .footer-text {
+     font-style: normal;
+     font-size: 14px;
+     line-height: 1.71;
+     color: var(--fon-color-white);
+ }
+
+ .footer-item:not(:last-child) {
+     margin-bottom: 9px;
+ }
+
+ .footer-list a {
+     color: rgba(255, 255, 255, 0.6);
+ }
+
+ .footer-contacts-link {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+            color: var(--secondo-text-color)
+        }
+ }
+
+ .a .footer-contacts-link {
+     display: inline-block;
+ }
+
+
+
+ .footer a {
+     text-decoration: none;
+ }
+
+ .footer-soc-list {
+     display: flex;
+     gap: 10px;
+
+ }
+
+ .footer-soc-icon {
+     fill: #FFFFFF;
+
+ }
+
+ .footer-soc-item {
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.1);
+    &:focus {
+            background-color: var(--accent-color);
+        }
+ }
+
+ 
+
+ .footer-soc-link {
+     display: block;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+            background-color: var(--accent-color);
+        }
+ }
+
+ 
+
+ .strong {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14px;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     display: inline-block;
+     margin-bottom: 20px;
+ }
+
+ .footer-totale {
+     display: flex;
+     align-items: baseline;
+
+ }
+
+ .add-footer {
+     margin-left: 70px;
+ }
+
+ .backdrop {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.2);
+     transition: opacity 250ms linear, visibility 250ms linear;
+ }
+
+ .div-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     align-items: baseline
+ }
+
+ .footer-form {
+     display: flex;
+     align-items: center;
+ }
+
+ .strong-onlain {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     display: block;
+     margin-bottom: 20px;
+ }
+
+ .onlain-item {
+     width: 358px;
+     height: 50px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 4px;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+     background-color: inherit;
+     padding-left: 16px;
+     color: #ffffff;
+     outline: transparent;
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: 0.03em;
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+
+ .footer-form-input::placeholder {
+     color: rgba(255, 255, 255, 0.6);
+     align-items: center;
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: 0.03em;
+ }
+
+ .onlain-wrap {
+     position: relative;
+ }
+
+ .onlain-label {
+     position: absolute;
+     left: 0;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: 0.03em;
+     color: rgba(255, 255, 255, 0.6);
+     align-items: center;
+     margin-left: 16px;
+     margin-bottom: 15px;
+     top: 50%;
+     transform: translateY(-50%);
+
+ }
+
+ .btn-onlain {
+     font-family: 'Roboto' sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.87;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 0.06em;
+     color: #FFFFFF;
+     display: block;
+     width: 200px;
+     height: 50px;
+     background: #2196F3;
+     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+     border-radius: 4px;
+     margin-left: 12px;
+     display: flex;
+     justify-content: center;
+     border: none;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:focus,
+     &:hover {
+        background-color: #188CE8;
+        color: var(--fon-color-white);
+
+    }
+    }
+
+
+ 
+
+ .ikon-telegram {
+     fill: #FFFFFF;
+     margin-left: 10px;
+ }

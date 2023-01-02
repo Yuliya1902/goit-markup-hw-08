@@ -14,24 +14,9 @@
 
 </head>
 <body>
-
+  
     <header class="header">
         <class class="container header-container">
-            <button type="button" 
-        class="menu-button is-open" 
-        data-menu-button
-        aria-expanded="false"
-        aria-controls="menu-container">
-            <svg width="18.67" 
-            height="18.67" 
-            
-            aria-label="переключатель мобільного меню">
-                <use class="ikon-close"   href="./images/icons.svg#icon-close_24px"></use>
-                <use class="ikon-menu"  href="./images/icons.svg#icon-menu_24px"></use>
-            </svg>
-        </button>
-        
-            
             <a href="./index.html" class="nav-link" lang="en">Web<span class="logo-link">Studia</span></a>
      
         <nav class="navigation">
@@ -61,37 +46,46 @@
         +38 096 111 11 11</a>
     </li>
        </ul>
-  
-       <div class="mob-menu is-hidden" data-menu>
-
-        <button type="button" class="menu-close" data-menu-close>
-            <svg class="ikon-close-menu" width="18.67px" height="18.67px">
-                <use href="./images/icons.svg#icon-close_24px"></use>
-            </svg>
+       <button type button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+      
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor">
+          <use href="./images/icons.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="18.67" height="18.67">
+        <use href="./images/icons.svg#icon-close_24px"></use>
+          </svg>
         </button>
+        <div class="menu">
+            <ul class="site-mob list">
+                <li><a href="./index.html" class="mob-link">Студія</a></li>
+                <li><a href="./portfolio.html" class="mob-link">Портфоліо</a></li>
+                <li><a href="#" class="mob-link">Контакти</a></li>
+            </ul>
         </div>
-            <div class="menu-container" id="menu-container" data-menu> 
             
-
-        <ul class="site-mob list">
-            <li><a href="./index.html" class="mob-link">Студія</a></li>
-            <li><a href="./portfolio.html" class="mob-link">Портфоліо</a></li>
-            <li><a href="#" class="mob-link">Контакти</a></li>
-        </ul>
-        <div class="mob-contact"> 
-        
-                <a href="mailto:info@devstudio.com" class="mob-contact-link">info@devstudio.com</a>
-            
-                <a href="tel:+380961111111" class="mob-contact-link">+38 096 111 11 11</a>
-            
-        <ul class="mob-menu-soc">
-            <li><a class="mob-menu-soc-link link" href="#">Instagram</a></li>
-            <li><a class="mob-menu-soc-link link" href="#">Twitter</a></li>
-            <li><a class="mob-menu-soc-link link" href="#">Facebook</a></li>
-            <li><a class="mob-menu-soc-link link" href="#">LinkedIn</a></li>
-        </ul>
-       </div> -->
-     -->
+            <div class="mob-contact"> 
+            <div class="mob-contact-list">
+                
+                    <a href="tel:+380961111111" class="mob-contact-link-tel">+38 096 111 11 11</a>
+                    <a href="mailto:info@devstudio.com" class="mob-contact-link">info@devstudio.com</a>
+</div>
+            <ul class="mob-menu-soc list">
+                <li><a class="mob-menu-soc-link link" href="#">Instagram</a></li>
+                <li><a class="mob-menu-soc-link link" href="#">Twitter</a></li>
+                <li><a class="mob-menu-soc-link link" href="#">Facebook</a></li>
+                <li><a class="mob-menu-soc-link link" href="#">LinkedIn</a></li>
+            </ul>
+           </div>
+        </div>
     
     </header>
 
@@ -101,8 +95,6 @@
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-button" type="button" data-modal-open >Замовити послугу</button>
         </div>
-
-       
         </section>
 
         <section class="benefit">
@@ -562,6 +554,6 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
-<script src="./js/menu.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

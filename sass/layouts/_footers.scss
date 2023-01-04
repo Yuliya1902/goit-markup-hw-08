@@ -122,25 +122,14 @@
      margin-bottom: 20px;
  }
 
- .footer-totale { 
-    align-items: center;
-    justify-content: center;
-  
-    
 
-    @media screen and (min-width: 768px) {
-    
-    display: flex;
-    align-items: baseline;
-}
-    }
- 
 
  .add-footer {
+    text-align: center;
     @media screen and (min-width: 768px) {
 
-     margin-left: 70px;
  }
+}
 
  .backdrop {
      position: fixed;
@@ -152,18 +141,20 @@
  }
 
  .div-footer {
-    //  display: flex;
+     display: flex;
      align-items: center;
     //  justify-content: space-between;
     //  align-items: baseline;
     justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    // flex-wrap: wrap;
+    flex-direction: column;
 
      @media screen and (min-width: 480px) {
-        
+
     }
     @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
      }
     @media screen and (min-width: 1200px) {
             display: flex;
@@ -172,13 +163,19 @@
     }
  }
 
+
  .footer-form {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
+     justify-content: center;
      @media screen and (min-width: 480px) {
-        
+        flex-direction: column;
      }
+     @media screen and (min-width: 1200px) {
+      flex-direction: row;
+
+}
 
  }
 
@@ -223,6 +220,11 @@
 
  .onlain-wrap {
      position: relative;
+     justify-content: center;
+     padding-bottom: 20px;
+     @media screen and (min-width: 1200px) {
+     padding-bottom: 0;
+     }
  }
 
  .onlain-label {
@@ -274,9 +276,26 @@
      fill: #FFFFFF;
      margin-left: 10px;
  }
-.footer-container {
-    display: block;
-    margin-left: auto;
+ .footer-container {
+    text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+      margin-top: 0;
+ }
+ @media screen and (min-width: 1200px) {
+     margin-right: 94px;
+     margin-bottom: 0;
+ }
 }
- 
+ .footer-totale {
+     text-align: center;
+     justify-content: center;
+     margin-top: 60px;  
+
+     @media screen and (min-width: 768px) {
+      margin-top: 0;
+ }
+ @media screen and (min-width: 1200px) {
+ }
+ }

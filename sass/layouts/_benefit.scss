@@ -13,11 +13,10 @@
     line-height: 1.16;
     text-align: center;
     color: var(--primary-text-color);
-    // margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     
         @media screen and (min-width: 1200px) {
-            padding-bottom: 50px;
+            margin-bottom: 50px;
             
         }
 }
@@ -78,8 +77,10 @@
     color: var(--primary-text-color);
     padding-bottom: 10px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+    text-align: justify;
+    }
   
-
 }
 
 .benefit-text {

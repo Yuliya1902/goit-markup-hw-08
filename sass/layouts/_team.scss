@@ -105,3 +105,12 @@
         
                 }
 }
+.teamour-title {
+    font-size: 28px;
+    line-height: 1.17;
+   
+     @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+}
+}
